@@ -1,0 +1,173 @@
+ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,table,th,td{
+	margin: 0;
+	padding: 0;
+}
+table{
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+ul,ol{ 
+	list-style: none;
+}
+a img,:link img,:visited img{ 
+	border:none;
+}
+body{
+	font-size: 62.5%;
+	background: #eee;
+}
+.runner-wrapper h1{
+	font-size: 70px;
+	text-align: center;
+	padding: 30px 0;
+}
+.game-field tr td{
+	width: 30px;
+	height: 30px;
+}
+.wrapper{
+	position: relative;
+	display: table;
+	margin: 0 auto;
+}
+.start-wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.level-end-wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.space{
+	background: url('../images/space.png') 0 0 no-repeat;
+}
+.wall{
+	background: url('../images/wall.png') 0 0 no-repeat;
+}
+.money{
+	background: url('../images/money.png') 0 0 no-repeat;
+}
+.lava{
+	background: url('../images/lava.png') 0 0 no-repeat;
+}
+.lava-burn{
+	background: url('../images/lava-burn.png') 0 0 no-repeat;
+}
+.finish{
+	background: url('../images/finish.png') 0 0 no-repeat;
+}
+.finish-open{
+	background: url('../images/finish-open.png') 0 0 no-repeat;
+}
+.finish-win{
+	background: url('../images/finish-win.png') 0 0 no-repeat;
+}
+.player{
+	background: url('../images/player.png') 0 0 no-repeat;
+}
+.start-btn{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -65px;
+	text-align: center;
+	font-size: 45px;
+	font-family: 'Open sans', serif;
+	color: #eee;
+	-webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+}
+.start-btn:hover{
+	color: #999;
+}
+.level-end-btn-lava{
+	font-size: 35px;
+	margin-top: -20px;
+}
+.level-end-btn{
+	font-size: 35px;
+	margin-left: -39px;
+	margin-top: -20px;
+}
+.notify{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -35px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Open sans', serif;
+	color: #eee;
+}
+.n-money{
+	color: #f2d94c;
+}
+.n-lava{
+	color: #8a0000;
+	font-size: 35px;
+	margin-left: -152px;
+	font-weight: bold;
+}
+.n-finish{
+	color: #ccc;
+	margin-left: -128px;
+}
+.n-finish-open-last{
+	color: green;
+	margin-top: -44px;
+	margin-left: -140px;
+	font-size: 65px;
+}
+.n-finish-open{
+	color: green;
+	margin-left: -77px;
+}
+.n-time-is-up{
+	color: #8a0000;
+	margin-left: -77px;
+	font-weight: bold;
+}
+.clock{
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.time-is-up{
+	color: red;
+}
+.controll{
+	font-size: 30px;
+	width: 230px;
+	margin: 30px auto 0;
+}
+.controll span{
+	line-height: 110px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+.thank-you{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -151px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Open sans', serif;
+	color: #fff;
+}

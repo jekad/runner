@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>runner</title>
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="runner-wrapper">
+		<h1>RUNNER</h1>
+		<div class="clock">
+			<span class="minutes"></span>:<span class="seconds"></span>
+		</div>
+		<div class="controll">
+			<span>use </span> <img src="images/arrows.png" alt="" />
+		</div>
+	</div>
+	<script>
+		var map = {
+			level: [
+					  " p                    ",
+					  "      !!!!!!!!!! mm  #",
+					  "######     !!!!!!!!!  ",
+					  " m#####               ",
+					  "  #  ##    ##     ####",
+					  "  #  #               m",
+					  "  #       ##       ###",
+					  "          ##       # f",
+					  "          m           "
+					  ],
+			time: {
+					  sec: 20,
+					  min: 0
+			},
+			next: {
+				level: [
+						  " p                    ",
+						  "       !m     #m     #",
+						  "    ##    ####### ####",
+						  "  #   #     m m!     #",
+						  " !#  ##    #####     #",
+						  " m#  #               #",
+						  "  #    !!!!!!!!!!!!###",
+						  "            !!!   # f#",
+						  "                      "
+					  ],
+				time: {
+						  sec: 22,
+					      min: 0
+				},
+				next: {
+					level: [
+							  " p              !!!!f!",
+							  "           #      !! !",
+							  "  ##   !   #         !",
+							  "      !m   #       !!!",
+							  " ######!   #    m     ",
+							  "    m#     #      #   ",
+							  " ## ##     #    #     ",
+							  "   m  ##   #    #     ",
+							  "                 #    "
+							],
+					time: {
+							  sec: 18,
+							  min: 0
+					},
+				}
+			}
+		}
+		
+		$('.runner-wrapper').runner(map);
+	</script>
+</body>
+</html>    
