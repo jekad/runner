@@ -11,3 +11,5 @@ legend : ! - lava,
 		 p - player start position,
 		 f - finish,
 		 m - coin
+
+enjoy ;)
