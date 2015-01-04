@@ -62,7 +62,7 @@
 			sec = map.time.sec,
 			min = map.time.min,
 			time,
-			sounds;
+			move;
 			
 			$('.level-end-wrap').detach();
 			
@@ -101,7 +101,7 @@
 							self.find('.minutes').html(min);
 						}
 						
-						if(sec == 0){;
+						if(sec == 0){
 							if(min == 0){
 								self.find('.clock').addClass('time-is-up');
 								clearTimeout(time);
@@ -161,7 +161,7 @@
 					case 'space': 
 						$(self).find('.player').removeClass('player').addClass('space');
 						nextCell.removeClass('space').addClass('player');
-					break
+					break;
 					
 					case 'finish': 
 						notify.finish();
@@ -234,7 +234,7 @@
 						'y': y
 					}
 				}
-			}
+			};
 			
 			//********** NOTIFY ************
 			
@@ -347,7 +347,7 @@
 				}
 			}, def.timeOut);
 		}
-	}
+	};
 	
 	$.fn.runner = function(method){
 		if ( methods[method] ) {
