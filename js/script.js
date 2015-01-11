@@ -101,8 +101,8 @@
 							self.find('.minutes').html(min);
 						}
 						
-						if(sec == 0){
-							if(min == 0){
+						if(sec === 0){
+							if(min === 0){
 								self.find('.clock').addClass('time-is-up');
 								clearTimeout(time);
 								$(document).off('keydown.move');
@@ -130,10 +130,10 @@
 			//************* MOVE **********
 			
 			function step(x, y){
-				var x = '.x-' + x;
-				var y = '.y-' + y;
-				var nextStepY = $(y);
-				var nextCell = nextStepY.find(x);
+				var xClass = '.x-' + x;
+				var yClass = '.y-' + y;
+				var nextStepY = $(yClass);
+				var nextCell = nextStepY.find(xClass);
 				
 				switch( $(nextCell).attr('class').split(' ')[1] ){
 					case 'wall': 
@@ -169,7 +169,7 @@
 					break;
 					
 					case 'finish-open': 
-						var player = $(self).find('.player').removeClass('player').addClass('space');
+						$(self).find('.player').removeClass('player').addClass('space');
 						nextCell.removeClass('space').addClass('finish-win');
 						timer.stop();
 						$(document).off('keydown.move');
@@ -232,7 +232,7 @@
 					return {
 						'x': x,
 						'y': y
-					}
+					};
 				}
 			};
 			
@@ -357,5 +357,5 @@
 		} else {
 			  $.error( 'метод ' +  method + ' не существует в jQuery.runner' );
 		}
-	}
+	};
 })(jQuery);
